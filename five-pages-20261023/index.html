@@ -1,0 +1,175 @@
+<!doctype html>
+<html lang="en-AU"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Luke's five pages, side by side · 23 Oct 2026</title>
+<style>
+@font-face{font-family:Newsreader;src:url(fonts/newsreader-normal-latin.woff2) format('woff2');font-weight:200 800;font-display:swap}
+@font-face{font-family:'DM Sans';src:url(fonts/dm-sans-normal-latin.woff2) format('woff2');font-weight:100 1000;font-display:swap}
+:root{--ink:#f5f5f7;--ink2:rgba(235,235,245,.64);--ink3:rgba(235,235,245,.5);--line:rgba(255,255,255,.12);--card:#1c1c1e;--gold:#f3d9a8;--amber:#f7ab70;--app:#0a0d13}
+*{box-sizing:border-box}
+body{margin:0;background:#000;color:var(--ink);font:17px/1.47 -apple-system,BlinkMacSystemFont,"SF Pro Text","Segoe UI",system-ui,sans-serif;-webkit-font-smoothing:antialiased}
+main{max-width:1320px;margin:0 auto;padding:0 20px 96px}
+h1{font-size:34px;line-height:41px;font-weight:700;margin:40px 0 8px}
+h2{font-size:28px;line-height:34px;font-weight:700;margin:80px 0 8px}
+h3{font-size:17px;line-height:22px;font-weight:600;margin:40px 0 12px}
+p{margin:0}
+.lede,.sub{color:var(--ink2);font-size:15px;line-height:20px;max-width:680px}
+.sub{margin-bottom:24px}
+nav{display:flex;flex-wrap:wrap;gap:4px 20px;margin-top:20px;font-size:15px}
+a{color:var(--gold);text-decoration:none}
+.row{display:flex;gap:16px;overflow-x:auto;scroll-snap-type:x mandatory;scroll-padding:0 20px;margin:0 -20px;padding:0 20px 12px;-webkit-overflow-scrolling:touch}
+.ph{margin:0;flex:0 0 196px;scroll-snap-align:start}
+.ph img{display:block;width:196px;height:424px;object-fit:cover;border-radius:24px;border:1px solid var(--line);background:#0a0a0a}
+.ph .n{font-size:15px;line-height:20px;font-weight:600;margin-top:12px}
+.ph .d{font-size:13px;line-height:18px;color:var(--ink2);margin-top:2px}
+.ph .m{font-size:13px;line-height:18px;color:var(--ink3);margin-top:6px}
+.note{font-size:13px;color:var(--ink3);margin-top:16px;max-width:680px}
+.hub{margin:8px 0 0;border-radius:14px;border:1px solid var(--line);width:100%;max-width:720px;display:block}
+.parts{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:12px;max-width:960px;margin-top:16px}
+.part{background:var(--card);border-radius:14px;padding:16px}
+.part b{display:block;font-size:17px;font-weight:600}
+.part span{display:block;font-size:15px;color:var(--ink2);margin-top:4px}
+.cards{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:16px;margin-top:8px}
+.card{background:var(--card);border-radius:18px;padding:16px}
+.ct{display:flex;gap:14px;align-items:flex-start;margin-bottom:8px}
+.ct img{width:56px;height:121px;object-fit:cover;border-radius:10px;border:1px solid var(--line);flex:none}
+.ct h3{margin:0}
+.vd{font-size:15px;line-height:20px;color:var(--ink2);margin-top:4px}
+.ck{padding:10px 0;border-top:1px solid var(--line)}
+.ckl{font-size:13px;color:var(--ink3)}
+.ckv{font-size:15px;line-height:20px;margin-top:2px}
+.mk{font-weight:600}.mk.yes{color:var(--ink)}.mk.partly{color:var(--gold)}.mk.missing{color:var(--amber)}
+.lesson{max-width:760px;padding:16px 0;border-top:1px solid var(--line)}
+.lesson .who{font-size:13px;color:var(--ink3)}
+.lesson .what{font-size:17px;line-height:22px;margin-top:4px}
+.lesson .so{font-size:15px;line-height:20px;color:var(--ink2);margin-top:6px}
+.dec{margin-top:56px}
+.dec h3{font-size:22px;line-height:28px;font-weight:700;margin:0}
+.pair{display:flex;flex-wrap:wrap;gap:16px;margin-top:16px}
+.spec{width:340px;max-width:100%;background:var(--app);border:1px solid var(--line);border-radius:22px;padding:24px;font-family:'DM Sans',system-ui,sans-serif;color:#f4f2ee}
+.spec .tag{font:600 13px/18px -apple-system,system-ui,sans-serif;color:var(--ink3);margin-bottom:16px}
+.rec{max-width:700px;margin-top:16px;font-size:15px;line-height:20px;color:var(--ink2)}
+.rec b{color:var(--ink);font-weight:600}
+.lad{display:flex;align-items:baseline;justify-content:space-between;gap:12px;padding:3px 0;white-space:nowrap;overflow:hidden}
+.lad i{font:400 13px/18px 'DM Sans';font-style:normal;color:rgba(244,242,238,.64)}
+.chip{display:inline-block;width:34px;height:34px;border-radius:8px;margin:0 6px 6px 0;border:1px solid rgba(255,255,255,.12)}
+.sw{display:flex;align-items:center;gap:12px;margin:8px 0}
+.sw .chip{margin:0}
+.sw span:last-child{font:400 15px/20px 'DM Sans'}
+.serif{font-family:Newsreader,Georgia,serif}
+.gap{position:relative}
+.gl{position:absolute;left:-14px;width:8px;border-left:1px solid var(--gold);border-top:1px solid var(--gold);border-bottom:1px solid var(--gold)}
+.gn{position:absolute;left:-44px;font:600 11px/14px 'DM Sans';color:var(--gold);width:26px;text-align:right}
+footer{margin-top:80px;font-size:13px;color:var(--ink3);max-width:760px}
+</style></head><body><main>
+
+<h1>Luke's five pages, side by side</h1>
+<p class="lede">Friday 23 October 2026. Every picture is the real app drawn from its code in sample mode at 390 wide, with made-up people, on a fixed Friday morning so versions compare fairly. Nothing here is Luke's account.</p>
+<nav><a href="#now">Now</a><a href="#structure">The structure</a><a href="#history">How each got here</a><a href="#research">What the best do</a><a href="#decide">First decisions</a></nav>
+
+<h2 id="now">Now, on main</h2>
+<p class="sub">Today, the two maps, Command, Leads and Relationships as they are on main this afternoon. Under each: what it does well or badly, and what is on its first screen, counted by the browser rather than by eye. Swipe the row on a phone.</p>
+<div class="row"><figure class="ph"><img src="img/now-today.jpg" alt="Today" loading="lazy"><figcaption><div class="n">Today</div><div class="d">The house look: photo, greeting, one card. But three things compete to be next.</div><div class="m">8 type sizes · 14 text colours · 7 spaced-capital labels</div></figcaption></figure><figure class="ph"><img src="img/now-mapplan.jpg" alt="Map, simple" loading="lazy"><figcaption><div class="n">Map, simple</div><div class="d">The closest to the structure: one numbered next step, one button. Its type is as busy as Leads.</div><div class="m">11 type sizes · 15 text colours · 15 spaced-capital labels</div></figcaption></figure><figure class="ph"><img src="img/now-mapaerial.jpg" alt="Map, aerial" loading="lazy"><figcaption><div class="n">Map, aerial</div><div class="d">Beautiful, but a view, not a page: no main thing, no next step.</div><div class="m">6 type sizes · 9 text colours · 5 spaced-capital labels</div></figcaption></figure><figure class="ph"><img src="img/now-command.jpg" alt="Command" loading="lazy"><figcaption><div class="n">Command</div><div class="d">The calmest page, and it says nothing about what to press.</div><div class="m">5 type sizes · 5 text colours · 2 spaced-capital labels</div></figcaption></figure><figure class="ph"><img src="img/now-leads.jpg" alt="Leads" loading="lazy"><figcaption><div class="n">Leads</div><div class="d">Right bones (James Morrison, Text James), the most dressing of all six.</div><div class="m">11 type sizes · 16 text colours · 9 spaced-capital labels</div></figcaption></figure><figure class="ph"><img src="img/now-people.jpg" alt="Relationships" loading="lazy"><figcaption><div class="n">Relationships</div><div class="d">A tidy contact list. No main person, no next step.</div><div class="m">8 type sizes · 7 text colours · 2 spaced-capital labels</div></figcaption></figure></div>
+<p class="note">The maps load real tiles this time: street maps from OpenFreeMap and satellite imagery from Sentinel-2. Earlier reviews showed "Map unavailable" because their copy had no tiles.</p>
+
+<h2 id="structure">The structure you liked</h2>
+<p class="sub">I've taken this to be this morning's control hub rework: you didn't like its look, but its skeleton was right. Every screen says four things, in this order. If you meant something else, tell me and I'll redo this part.</p>
+<img class="hub" src="img/hub-part.jpg" alt="The control hub's App page: a trail at the top, the page's name, the main figure large, the next step at the bottom of the side panel">
+<div class="parts">
+<div class="part"><b>1. Where you are</b><span>The trail at the top: Your project, Luke's product, App.</span></div>
+<div class="part"><b>2. The main thing</b><span>One thing, big: 0 of 41 screens ready.</span></div>
+<div class="part"><b>3. The next step</b><span>One action that says what it does: Open the screens.</span></div>
+<div class="part"><b>4. The rest, on a tap</b><span>Detail sits to the side or one tap away, never stacked on top.</span></div>
+</div>
+<h3>Each page, checked against those four</h3>
+<div class="cards"><article class="card"><div class="ct"><img src="img/now-today.jpg" alt=""><div><h3>Today</h3><p class="vd">Keep the card. Cut to one next step.</p></div></div><div class="ck"><div class="ckl">Where you are</div><div class="ckv"><span class="mk yes">Yes</span> &quot;Good morning, Luke&quot;, Friday 23 October, 9:40 am</div></div><div class="ck"><div class="ckl">The main thing</div><div class="ckv"><span class="mk yes">Yes</span> The Southbank brief</div></div><div class="ck"><div class="ckl">The next step</div><div class="ckv"><span class="mk partly">Partly</span> Open brief. But &quot;Morrison in 1h 20m&quot; at the top and &quot;ask Sarah at 3:00&quot; at the bottom also ask to be next</div></div><div class="ck"><div class="ckl">The rest, on a tap</div><div class="ckv"><span class="mk yes">Yes</span> Then: 11:00 Follow up with Morrison, 2:30 Leave for Crown</div></div></article><article class="card"><div class="ct"><img src="img/now-mapplan.jpg" alt=""><div><h3>Map, simple</h3><p class="vd">The model to copy for the other pages.</p></div></div><div class="ck"><div class="ckl">Where you are</div><div class="ckv"><span class="mk yes">Yes</span> Your suburbs, ringed in gold</div></div><div class="ck"><div class="ckl">The main thing</div><div class="ckv"><span class="mk yes">Yes</span> 230 City Rd, numbered 1 on the map and in the card</div></div><div class="ck"><div class="ckl">The next step</div><div class="ckv"><span class="mk yes">Yes</span> Text James, the only button</div></div><div class="ck"><div class="ckl">The rest, on a tap</div><div class="ckv"><span class="mk yes">Yes</span> Also today, under it in the same card</div></div></article><article class="card"><div class="ct"><img src="img/now-mapaerial.jpg" alt=""><div><h3>Map, aerial</h3><p class="vd">Give it the simple map&#x27;s card, or make it a way of seeing the simple map.</p></div></div><div class="ck"><div class="ckl">Where you are</div><div class="ckv"><span class="mk yes">Yes</span> Greater Melbourne, yours in gold</div></div><div class="ck"><div class="ckl">The main thing</div><div class="ckv"><span class="mk missing">Missing</span> Glowing suburbs; nothing says which one matters</div></div><div class="ck"><div class="ckl">The next step</div><div class="ckv"><span class="mk missing">Missing</span> None. &quot;Owner may sell&quot; sits small in the bottom bar</div></div><div class="ck"><div class="ckl">The rest, on a tap</div><div class="ckv"><span class="mk partly">Partly</span> Seven round controls before any content</div></div></article><article class="card"><div class="ct"><img src="img/now-command.jpg" alt=""><div><h3>Command</h3><p class="vd">Add one line saying what it&#x27;s on and what to ask.</p></div></div><div class="ck"><div class="ckl">Where you are</div><div class="ckv"><span class="mk missing">Missing</span> No page name; COMMAND in spaced capitals inside the orb</div></div><div class="ck"><div class="ckl">The main thing</div><div class="ckv"><span class="mk partly">Partly</span> The orb, but not what it is doing</div></div><div class="ck"><div class="ckl">The next step</div><div class="ckv"><span class="mk missing">Missing</span> Nothing says what to press; the keyboard button is the only visible way in</div></div><div class="ck"><div class="ckl">The rest, on a tap</div><div class="ckv"><span class="mk partly">Partly</span> The clock opens history</div></div></article><article class="card"><div class="ct"><img src="img/now-leads.jpg" alt=""><div><h3>Leads</h3><p class="vd">Keep the order. Strip the dressing.</p></div></div><div class="ck"><div class="ckl">Where you are</div><div class="ckv"><span class="mk yes">Yes</span> Leads, with five filters under it</div></div><div class="ck"><div class="ckl">The main thing</div><div class="ckv"><span class="mk yes">Yes</span> James Morrison, on a photo of 230 City Road</div></div><div class="ck"><div class="ckl">The next step</div><div class="ckv"><span class="mk yes">Yes</span> Text James</div></div><div class="ck"><div class="ckl">The rest, on a tap</div><div class="ckv"><span class="mk partly">Partly</span> Next up, but each row repeats a capital label and its own round button</div></div></article><article class="card"><div class="ct"><img src="img/now-people.jpg" alt=""><div><h3>Relationships</h3><p class="vd">Lead with one person who is due, and why. The 18 Oct drawing already does.</p></div></div><div class="ck"><div class="ckl">Where you are</div><div class="ckv"><span class="mk yes">Yes</span> Relationships, everyone you deal with, A to Z</div></div><div class="ck"><div class="ckl">The main thing</div><div class="ckv"><span class="mk missing">Missing</span> Six equal rows; nobody comes first</div></div><div class="ck"><div class="ckl">The next step</div><div class="ckv"><span class="mk missing">Missing</span> Only &quot;Add a person&quot;</div></div><div class="ck"><div class="ckl">The rest, on a tap</div><div class="ckv"><span class="mk partly">Partly</span> Book and Live; &quot;Two need you&quot; sits at 9.5 px</div></div></article></div>
+
+<h2 id="history">How each got here</h2>
+<p class="sub">Each row: the page now, then the three most recent versions that look really different. Small changes in between are skipped; the computer compared every version on main pixel by pixel to find where the look actually changed. Three rows include the 18 October drawing (Round 13), which was never built.</p>
+<h3>Today</h3><div class="row"><figure class="ph"><img src="img/now-today.jpg" alt="Now" loading="lazy"><figcaption><div class="n">Now</div><div class="d">On main today</div></figcaption></figure><figure class="ph"><img src="img/h-today-r13.jpg" alt="Drawn 18 Oct, never built" loading="lazy"><figcaption><div class="n">Drawn 18 Oct, never built</div><div class="d">Round 13. One person, one call button, on glass over the city.</div><div class="m">6 type sizes · 10 text colours · 0 spaced-capital labels</div></figcaption></figure><figure class="ph"><img src="img/h-today-c13d73905.jpg" alt="On main 14 to 19 Oct" loading="lazy"><figcaption><div class="n">On main 14 to 19 Oct</div><div class="d">At this hour it showed the day as a timeline: five things prepared overnight.</div><div class="m">8 type sizes · 14 text colours · 7 spaced-capital labels</div></figcaption></figure><figure class="ph"><img src="img/h-today-00cb5f5a2.jpg" alt="On main 26 Sep" loading="lazy"><figcaption><div class="n">On main 26 Sep</div><div class="d">The first: city at dusk, a play bar for the briefing, more buttons.</div><div class="m">16 type sizes · 15 text colours · 9 spaced-capital labels</div></figcaption></figure></div><h3>Map, simple</h3><div class="row"><figure class="ph"><img src="img/now-mapplan.jpg" alt="Now" loading="lazy"><figcaption><div class="n">Now</div><div class="d">On main today</div></figcaption></figure><figure class="ph"><img src="img/h-mapplan-3f56da637.jpg" alt="On main 18 Oct" loading="lazy"><figcaption><div class="n">On main 18 Oct</div><div class="d">The same card set to the left, a cream button, a title and key on the map.</div><div class="m">11 type sizes · 15 text colours · 18 spaced-capital labels</div></figcaption></figure><figure class="ph"><img src="img/h-mapplan-8bfc6dbc7.jpg" alt="Drawn 17 Oct, afternoon" loading="lazy"><figcaption><div class="n">Drawn 17 Oct, afternoon</div><div class="d">The glass card arrives. Next is a meeting at Crown.</div><div class="m">11 type sizes · 14 text colours · 11 spaced-capital labels</div></figcaption></figure><figure class="ph"><img src="img/h-mapplan-198681678.jpg" alt="Drawn 17 Oct, morning" loading="lazy"><figcaption><div class="n">Drawn 17 Oct, morning</div><div class="d">A paper card: &quot;Your ground&quot; and three big numbers.</div><div class="m">16 type sizes · 15 text colours · 14 spaced-capital labels</div></figcaption></figure></div><h3>Map, aerial</h3><div class="row"><figure class="ph"><img src="img/now-mapaerial.jpg" alt="Now" loading="lazy"><figcaption><div class="n">Now</div><div class="d">On main today</div></figcaption></figure><figure class="ph"><img src="img/h-mapaerial-30a33d383.jpg" alt="On main 11 Oct" loading="lazy"><figcaption><div class="n">On main 11 Oct</div><div class="d">Sharper imagery, a ring on Moonee Ponds, the same bar.</div></figcaption></figure><figure class="ph"><img src="img/h-mapaerial-774a2064d.jpg" alt="On main 9 Oct" loading="lazy"><figcaption><div class="n">On main 9 Oct</div><div class="d">A card over the map for one site: 14 Kent, &quot;Marco may own it&quot;.</div></figcaption></figure></div><h3>Command</h3><div class="row"><figure class="ph"><img src="img/now-command.jpg" alt="Now" loading="lazy"><figcaption><div class="n">Now</div><div class="d">On main today</div></figcaption></figure><figure class="ph"><img src="img/h-command-r13.jpg" alt="Drawn 18 Oct, never built" loading="lazy"><figcaption><div class="n">Drawn 18 Oct, never built</div><div class="d">The orb sits on Today and asks one question: &quot;Move Ampol to twelve?&quot;</div><div class="m">8 type sizes · 10 text colours · 0 spaced-capital labels</div></figcaption></figure><figure class="ph"><img src="img/h-command-eb82e0bc3.jpg" alt="On main 9 to 12 Oct" loading="lazy"><figcaption><div class="n">On main 9 to 12 Oct</div><div class="d">A suggestion under the orb: try &quot;Show me the site through the day&quot;.</div><div class="m">6 type sizes · 3 text colours · 0 spaced-capital labels</div></figcaption></figure><figure class="ph"><img src="img/h-command-774a2064d.jpg" alt="On main 6 to 9 Oct" loading="lazy"><figcaption><div class="n">On main 6 to 9 Oct</div><div class="d">Adds &quot;Or tell me something to file&quot; and &quot;How Command works&quot;.</div><div class="m">8 type sizes · 5 text colours · 2 spaced-capital labels</div></figcaption></figure></div><h3>Leads</h3><div class="row"><figure class="ph"><img src="img/now-leads.jpg" alt="Now" loading="lazy"><figcaption><div class="n">Now</div><div class="d">On main today</div></figcaption></figure><figure class="ph"><img src="img/h-leads-dff1ad8d5.jpg" alt="On main 7 to 12 Oct" loading="lazy"><figcaption><div class="n">On main 7 to 12 Oct</div><div class="d">&quot;Four to act on today.&quot; A skyline where each building is a lead, then the move.</div><div class="m">14 type sizes · 11 text colours · 11 spaced-capital labels</div></figcaption></figure><figure class="ph"><img src="img/h-leads-e4112976a.jpg" alt="On main 30 Sep to 1 Oct" loading="lazy"><figcaption><div class="n">On main 30 Sep to 1 Oct</div><div class="d">The same skyline over a city photo.</div><div class="m">14 type sizes · 10 text colours · 12 spaced-capital labels</div></figcaption></figure><figure class="ph"><img src="img/h-leads-48923d53a.jpg" alt="On main 26 to 30 Sep" loading="lazy"><figcaption><div class="n">On main 26 to 30 Sep</div><div class="d">Called Discovery: leads as planets around the orb.</div><div class="m">13 type sizes · 10 text colours · 9 spaced-capital labels</div></figcaption></figure></div><h3>Relationships</h3><div class="row"><figure class="ph"><img src="img/now-people.jpg" alt="Now" loading="lazy"><figcaption><div class="n">Now</div><div class="d">On main today</div></figcaption></figure><figure class="ph"><img src="img/h-people-r13.jpg" alt="Drawn 18 Oct, never built" loading="lazy"><figcaption><div class="n">Drawn 18 Oct, never built</div><div class="d">The one you called &quot;the best of the thing so far, by far&quot;: one person, why now, two actions.</div><div class="m">9 type sizes · 5 text colours · 0 spaced-capital labels</div></figcaption></figure><figure class="ph"><img src="img/h-people-5e483ba6a.jpg" alt="On main 2 to 8 Oct" loading="lazy"><figcaption><div class="n">On main 2 to 8 Oct</div><div class="d">&quot;Who&#x27;s warm&quot;: taller is warmer. Ring Daniel Okafor before it goes cold.</div><div class="m">12 type sizes · 11 text colours · 7 spaced-capital labels</div></figcaption></figure><figure class="ph"><img src="img/h-people-c40974493.jpg" alt="On main 29 to 30 Sep" loading="lazy"><figcaption><div class="n">On main 29 to 30 Sep</div><div class="d">People on rings around you; closer is warmer.</div><div class="m">8 type sizes · 12 text colours · 14 spaced-capital labels</div></figcaption></figure></div><p class="note">Aerial maps from before 9 Oct would not draw in this machine's software 3D within three minutes, so they are left out rather than shown broken.</p>
+
+<h2 id="research">What the best do</h2>
+<p class="sub">Apple and Google from their own pages; the others from launch coverage. Each lesson ends with what it means for Luke's app.</p>
+<div class="lesson"><div class="who">Apple, typography</div><div class="what">Hierarchy comes from size and weight, not from colour or decoration. Keep to as few typefaces as you can. Body text is 17 pt; nothing goes under 11 pt. Avoid light weights.</div><div class="so">Our pages draw text as small as 7 px, and the kit uses a light 300 weight in three places. Two typefaces is right; keep it at two.</div></div>
+<div class="lesson"><div class="who">Apple, layout</div><div class="what">Group related things with one of three tools: space, a container, or a line. Put the most important thing at the top and leading edge.</div><div class="so">Leads draws a box round every row, then adds a capital label and a round button inside it. The box alone would do.</div></div>
+<div class="lesson"><div class="who">Apple, materials</div><div class="what">Glass is for controls floating over content, never for the content itself, and used sparingly.</div><div class="so">Glass over Today's photo and over the map is right. Plain lists sit on the plain ground.</div></div>
+<div class="lesson"><div class="who">Apple, motion</div><div class="what">Motion has a purpose, is brief, and is optional. It's never the only way something is said.</div><div class="so">The orb's light can say "I'm working", as long as a word says it too.</div></div>
+<div class="lesson"><div class="who">Google, 46 studies with more than 18,000 people</div><div class="what">Make the key action stand out by size, colour and position, and group like things. People found the key action up to four times faster. But they also warn that expressive design does not suit everything, naming banking.</div><div class="so">Luke's app is a work tool, closer to banking than to a music player. One standout button per screen, and calm everywhere else.</div></div>
+<div class="lesson"><div class="who">Google Antigravity (agent manager)</div><div class="what">The agent's work shows as an inbox of tasks, each with a state (running, done, failed), with its evidence kept beside it.</div><div class="so">That is your plain to-do idea for Command: the task, who is doing it, where it's at, and a tap for the journey.</div></div>
+<div class="lesson"><div class="who">Google Flow and Gemini Omni</div><div class="what">One canvas with the work on it and one input at the bottom; you change things by talking to it.</div><div class="so">The orb is that input. What it makes should land on the page you're on, not in a separate chat.</div></div>
+
+<h2 id="decide">First decisions, drawn</h2>
+<p class="sub">Five decisions that would make the six pages one family. Each shows what's on the screen now beside what I propose. Say yes, no, or change it, and I'll apply it to one page first: the simple map, because its structure is already right.</p>
+
+<div class="dec"><h3>1. Six type sizes, not eleven</h3>
+<p class="rec">Leads' first screen uses 11 sizes, from 7 to 34 px. Apple's phone set has eleven, but a screen uses three or four.</p>
+<div class="pair">
+<div class="spec"><div class="tag">Now, Leads: every size on the first screen</div><div class="lad"><span style="font:400 34px/1.15 Newsreader">Morrison</span><i>34 px</i></div><div class="lad"><span style="font:400 22px/1.15 Newsreader">Morrison</span><i>22 px</i></div><div class="lad"><span style="font:400 18px/1.15 Newsreader">Morrison</span><i>18 px</i></div><div class="lad"><span style="font:400 15px/1.15 DM Sans">Morrison</span><i>15 px</i></div><div class="lad"><span style="font:400 12px/1.15 DM Sans">Morrison</span><i>12 px</i></div><div class="lad"><span style="font:400 11px/1.15 DM Sans">Morrison</span><i>11 px</i></div><div class="lad"><span style="font:400 10.5px/1.15 DM Sans">Morrison</span><i>10.5 px</i></div><div class="lad"><span style="font:400 10px/1.15 DM Sans">Morrison</span><i>10 px</i></div><div class="lad"><span style="font:400 9px/1.15 DM Sans">Morrison</span><i>9 px</i></div><div class="lad"><span style="font:400 8px/1.15 DM Sans">Morrison</span><i>8 px</i></div><div class="lad"><span style="font:400 7px/1.15 DM Sans">Morrison</span><i>7 px</i></div></div>
+<div class="spec"><div class="tag">Proposed: six sizes, each with one job</div>
+<div class="lad"><span class="serif" style="font:400 34px/41px Newsreader">Good morning</span><i>34 page</i></div>
+<div class="lad"><span class="serif" style="font:400 26px/32px Newsreader">Southbank brief</span><i>26 main thing</i></div>
+<div class="lad"><span class="serif" style="font:500 19px/24px Newsreader">Marco Pellegrini</span><i>19 a name</i></div>
+<div class="lad"><span style="font:600 17px/22px 'DM Sans'">Next up</span><i>17 section</i></div>
+<div class="lad"><span style="font:400 15px/20px 'DM Sans'">Your 3:00 is about this site.</span><i>15 says</i></div>
+<div class="lad"><span style="font:400 13px/18px 'DM Sans';color:rgba(244,242,238,.64)">Owns 441–445 · 5 weeks</span><i>13 detail</i></div>
+<div class="lad"><span style="font:500 11px/13px 'DM Sans';color:rgba(244,242,238,.64)">Today · Map · Leads</span><i>11 tabs only</i></div>
+</div></div>
+<p class="rec"><b>I recommend this ladder.</b> Every size is already on the law's allowed scale, so the check that stops drift needs no new rule, only a shorter list. No light weights and no italics.</p></div>
+
+<div class="dec"><h3>2. Four colours for words</h3>
+<p class="rec">Leads' first screen uses 16 different text colours, most of them near-greys that read as the same grey.</p>
+<div class="pair">
+<div class="spec"><div class="tag">Now, Leads: every text colour on the first screen</div><span class="chip" style="background:rgb(165, 168, 174)" title="rgb(165, 168, 174)"></span><span class="chip" style="background:rgb(244, 242, 238)" title="rgb(244, 242, 238)"></span><span class="chip" style="background:rgb(146, 148, 154)" title="rgb(146, 148, 154)"></span><span class="chip" style="background:rgb(198, 200, 205)" title="rgb(198, 200, 205)"></span><span class="chip" style="background:rgb(198, 176, 143)" title="rgb(198, 176, 143)"></span><span class="chip" style="background:rgb(139, 147, 166)" title="rgb(139, 147, 166)"></span><span class="chip" style="background:rgb(154, 162, 182)" title="rgb(154, 162, 182)"></span><span class="chip" style="background:rgb(127, 132, 139)" title="rgb(127, 132, 139)"></span><span class="chip" style="background:rgb(241, 232, 217)" title="rgb(241, 232, 217)"></span><span class="chip" style="background:rgb(200, 175, 136)" title="rgb(200, 175, 136)"></span><span class="chip" style="background:rgb(247, 245, 241)" title="rgb(247, 245, 241)"></span><span class="chip" style="background:rgb(198, 200, 204)" title="rgb(198, 200, 204)"></span><span class="chip" style="background:rgb(194, 196, 201)" title="rgb(194, 196, 201)"></span><span class="chip" style="background:rgb(17, 20, 25)" title="rgb(17, 20, 25)"></span><span class="chip" style="background:rgb(212, 194, 165)" title="rgb(212, 194, 165)"></span><span class="chip" style="background:rgb(180, 180, 183)" title="rgb(180, 180, 183)"></span></div>
+<div class="spec"><div class="tag">Proposed: one ink at two strengths, gold, amber</div>
+<div class="sw"><span class="chip" style="background:#f4f2ee"></span><span>Names and what matters</span></div>
+<div class="sw"><span class="chip" style="background:rgba(244,242,238,.64)"></span><span style="color:rgba(244,242,238,.64)">What it says, detail, times</span></div>
+<div class="sw"><span class="chip" style="background:#f3d9a8"></span><span style="color:#f3d9a8">Yours, and the next step</span></div>
+<div class="sw"><span class="chip" style="background:#f7ab70"></span><span style="color:#f7ab70">Late, or at risk</span></div>
+</div></div>
+<p class="rec"><b>I recommend these four.</b> Three are the 18 October drawing's own; amber is the kit's warning colour. The quieter ink still passes the contrast check on the dark ground (7.4 to 1). Teal subtitles and blue links go.</p></div>
+
+<div class="dec"><h3>3. Labels in plain words, not spaced capitals</h3>
+<p class="rec">The law already bans spaced capitals, but the kit's own label style is spaced capitals, so every page that adopts the kit brings them back. Today has 7 on its first screen, the simple map 15.</p>
+<div class="pair">
+<div class="spec"><div class="tag">Now, Leads' top card</div>
+<div style="font:600 11px/14px 'DM Sans';letter-spacing:.16em;color:#c8af88">NEXT ACTION</div>
+<div class="serif" style="font:400 34px/40px Newsreader;margin-top:6px">James Morrison</div>
+<div style="font:400 15px/20px 'DM Sans';color:rgba(244,242,238,.64);margin-top:6px">230 City Road, Southbank</div></div>
+<div class="spec"><div class="tag">Proposed: the place says it's next; the words say why</div>
+<div class="serif" style="font:400 26px/32px Newsreader">James Morrison</div>
+<div style="font:400 15px/20px 'DM Sans';margin-top:4px">Tell him 230 City Road is for sale. It fits his brief.</div>
+<div style="font:400 13px/18px 'DM Sans';color:rgba(244,242,238,.64);margin-top:4px">Southbank · over 1,500 m²</div></div>
+</div>
+<p class="rec"><b>I recommend fixing the kit's label first.</b> Then labels are sentence case at 13, or gone when the position already says it.</p></div>
+
+<div class="dec"><h3>4. One filled button: the next step</h3>
+<p class="rec">Today's card has two pill buttons and a small orb side by side. Google's research is the reason for one: the key action is found up to four times faster when it alone stands out.</p>
+<div class="pair">
+<div class="spec"><div class="tag">Now, Today's card</div>
+<div class="serif" style="font:400 26px/32px Newsreader">The Southbank brief</div>
+<div style="display:flex;gap:10px;margin-top:20px;align-items:center">
+<span style="height:40px;padding:0 18px;border-radius:20px;background:#f1ede6;color:#12161e;font:500 14px/40px 'DM Sans'">Open brief</span>
+<span style="height:40px;padding:0 18px;border-radius:20px;border:1px solid rgba(244,242,238,.3);font:500 14px/38px 'DM Sans'">Mark reviewed</span>
+<span style="width:22px;height:22px;border-radius:50%;box-shadow:inset 0 0 0 2px #9fb5e0,0 0 8px rgba(159,181,224,.6);margin-left:auto"></span></div></div>
+<div class="spec"><div class="tag">Proposed: one filled button, the rest as words</div>
+<div class="serif" style="font:400 26px/32px Newsreader">The Southbank brief</div>
+<div style="height:48px;border-radius:12px;background:#f3d9a8;color:#12161e;font:600 17px/48px 'DM Sans';text-align:center;margin-top:20px">Open brief</div>
+<div style="font:500 15px/20px 'DM Sans';color:rgba(244,242,238,.64);text-align:center;margin-top:14px">Mark reviewed</div></div>
+</div>
+<p class="rec"><b>I recommend it,</b> with the button a rounded rectangle at the kit's 12 px corner, so it is no longer a pill.</p></div>
+
+<div class="dec"><h3>5. A heading sits with what it names</h3>
+<p class="rec">Apple's rule for grouping is space. A heading belongs to what's under it, so it sits close below and far above. The kit already says 40 above and 12 below. I haven't yet measured how far each page strays from it.</p>
+<div class="pair">
+<div class="spec"><div class="tag">Even spacing: the heading floats</div>
+<div style="font:400 15px/20px 'DM Sans';color:rgba(244,242,238,.64)">…your 3:00 with Sarah Lin.</div>
+<div class="gap" style="margin-top:24px"><span class="gl" style="top:-24px;height:24px"></span><span class="gn" style="top:-19px">24</span><div style="font:600 17px/22px 'DM Sans'">Then</div></div>
+<div class="gap" style="margin-top:24px"><span class="gl" style="top:-24px;height:24px"></span><span class="gn" style="top:-19px">24</span><div class="serif" style="font:500 19px/24px Newsreader">Follow up with Morrison</div><div style="font:400 13px/18px 'DM Sans';color:rgba(244,242,238,.64)">11:00</div></div></div>
+<div class="spec"><div class="tag">Proposed: 40 above, 12 below</div>
+<div style="font:400 15px/20px 'DM Sans';color:rgba(244,242,238,.64)">…your 3:00 with Sarah Lin.</div>
+<div class="gap" style="margin-top:40px"><span class="gl" style="top:-40px;height:40px"></span><span class="gn" style="top:-27px">40</span><div style="font:600 17px/22px 'DM Sans'">Then</div></div>
+<div class="gap" style="margin-top:12px"><span class="gl" style="top:-12px;height:12px"></span><span class="gn" style="top:-13px">12</span><div class="serif" style="font:500 19px/24px Newsreader">Follow up with Morrison</div><div style="font:400 13px/18px 'DM Sans';color:rgba(244,242,238,.64)">11:00</div></div></div>
+</div>
+<p class="rec"><b>I recommend holding the kit's 40 and 12 everywhere,</b> and a title with its one-line subtitle 4 apart. I'll measure each page's real gaps from the pixels when it's redrawn.</p></div>
+
+<footer>Sources: Apple Human Interface Guidelines (typography, layout, materials, motion), developer.apple.com/design/human-interface-guidelines. Google Design, "Expressive design: Google's UX research", design.google/library/expressive-material-design-google-research. Google Antigravity, Flow and Gemini Omni from launch coverage. The app frames come from git history of thomasrocks006-cmyk/PWA (main at ee09291af; the 18 October drawing at 140312fc1), rendered with made-up sample people.</footer>
+</main></body></html>
